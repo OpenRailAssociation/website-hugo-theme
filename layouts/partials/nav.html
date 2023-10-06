@@ -1,0 +1,12 @@
+  <!-- Navbar -->
+<section class="top-nav">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        {{ range .links }}
+          <li><a href="{{ .link }}">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
+</section>
