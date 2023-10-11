@@ -1,0 +1,18 @@
+				<!-- News -->
+                <section class="wrapper {{ .style }}" id="news">
+                    <div class="inner medium">
+                        <h2>{{ .title }}</h2>
+                        {{ range .newsitems }}
+                        <p>
+                            <a href="{{ .link }}">
+                                <em>{{ .date }}:</em> {{ .headline }}
+                            </a>
+                        </p>
+                        {{ end }}
+                        <ul class="actions stacked">
+                            {{ range .buttons }}
+                            <li><a href="{{ .link }}" class="button">{{ .label }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </section>
