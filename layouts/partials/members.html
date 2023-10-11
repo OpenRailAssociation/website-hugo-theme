@@ -1,0 +1,29 @@
+<!-- Supporters -->
+<section class="wrapper style1 align-center" id="supporters">
+  <div class="inner">
+      <h2>{{ .title }}</h2>
+      <p>
+          {{ with .introduction }}{{ . }}{{ end }}
+      </p>
+      <div class="items {{ .listclass }}">
+            {{ range .members }}
+            <section>
+                <a href="{{ .link }}" target="_blank">
+                    <img src="{{ .imgsrc }}" height="{{ .imgheight }}" style="margin: {{ .imgmargin }}px;" alt="{{ .name }} logo" />
+                </a>
+                <h3>{{ .name }}</h3>
+            </section>
+            {{ end}}
+          <section>
+              <br>
+              <h1><b>?</b></h1>
+              <h3>And how about you?</h3>
+              <ul class="actions stacked">
+                  <li>
+                      <a href="#contact" class="button big wide smooth-scroll-middle">Get in touch</a>
+                  </li>
+              </ul>
+          </section>
+      </div>
+  </div>
+</section>
