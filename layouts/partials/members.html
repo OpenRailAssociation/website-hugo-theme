@@ -3,7 +3,7 @@
   <div class="inner">
       <h2>{{ .title }}</h2>
       <p>
-          {{ with .introduction }}{{ . }}{{ end }}
+          {{ with .introduction }}{{ . | safeHTML }}{{ end }}
       </p>
       <div class="items {{ .listclass }}">
             {{ range .members }}
