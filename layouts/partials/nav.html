@@ -4,6 +4,9 @@
     <label class="menu-button-container" for="menu-toggle">
         <div class='menu-button'></div>
     </label>
+    <a href="{{ relURL "/" }}" id="navlogo">
+      <img src="{{ relURL .logo }}" />
+    </a>
     <ul class="menu">
         {{ range .links }}
           <li><a href="{{ relURL .link }}">{{ .name }}</a></li>
