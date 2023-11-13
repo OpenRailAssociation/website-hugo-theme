@@ -1,4 +1,4 @@
-{{- /*  Template for all files in /content/, unless specified separately (like /news)  */ -}}
+{{- /*  Template for all files in /content/news/  */ -}}
 <!DOCTYPE HTML>
 <!--
   Hugo Story by CaressOfSteel
@@ -15,11 +15,17 @@
     <!-- Wrapper -->
     <div id="wrapper" class="divided">
       {{ partial "nav" site.Data.nav }}
-      <section class="wrapper style1 align-left" id="contact">
+      <section class="news spotlight style2 orient-left content-align-left onscroll-image-fade-in {{ .Params.image.class }}">
         <div class="inner medium">
         <h2>{{ .Title }}</h2>
         {{ .Content }}
-        </div>
+      </div>
+      {{ if .Params.image }}
+      <div class="image">
+        <img src="{{ relURL .Params.image.src }}"
+            alt="{{ .Params.image.alt }}" />
+      </div>
+      {{ end }}
       </section>
       {{ partial "footer" site.Data.footer }}
     <!-- Wrapper -->
