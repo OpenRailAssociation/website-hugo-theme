@@ -6,7 +6,7 @@
     </label>
     <ul class="menu">
         {{ range .links }}
-          <li><a href="{{ .link }}">{{ .name }}</a></li>
+          <li><a href="{{ relURL .link }}">{{ .name }}</a></li>
         {{ end }}
     </ul>
 </section>
