@@ -1,6 +1,9 @@
 # Hugo Story
 ## A (modular, highly tweakable) responsive one-page theme for Hugo.
 
+> [!NOTE]
+> This is a fork of the [port of the HTML5 UP Story theme to Hugo](https://github.com/caressofsteel/hugo-story) made by [@caressofsteel](https://github.com/caressofsteel). It is solely used for the [website of the OpenRail Association](https://github.com/OpenRailAssociation/website).
+
 ![](images/device-screenshots.png)
 
 Hugo Story is a port of the static HTML template Story by HTML5 UP. It is designed to mirror the look and feel of the original template as closely as possible while incorporating some of the features Hugo has to offer.
@@ -39,11 +42,11 @@ https://caressofsteel.github.io/demos/hugo/hugo-story/
 ### 1. Install Hugo.
 
 [Install Hugo (Extended Version)](https://gohugo.io/overview/installing/)
-    
+
 > _This theme uses Hugo Pipes to compile SCSS & Sass so you'll have to use the **extended** version of Hugo. See the official [Hugo Quick Start Guide](https://gohugo.io/getting-started/quick-start/) for more information._
 ### 2. Create a new example site called `mystory`.
 
-``` 
+```
 hugo new site mystory
 ```
 ### 3. Clone the Git repository.
@@ -61,7 +64,7 @@ cp -r themes/hugo-story/exampleSite/* ./
 > _Hint: This sets up the `mystory` example website with a copy of the theme `assets`, `layouts`, `data`, and `configuration` files in the site's root folder and outside of the theme folder._
 
 > _Hint: Theme assets in the site root, `if present`, take precedence over files in the theme folder._
-> 
+>
 ### 5. Start Hugo Server.
 ```
 hugo server
@@ -74,7 +77,7 @@ Here you'll see the site running on the local Hugo server. You can now edit the 
 
 ### 7. Further steps.
 
-- Edit the contents of `YML` files in the `data` folder. 
+- Edit the contents of `YML` files in the `data` folder.
   - _Altering `banner.yml` will change the top block on the site. See more details [here](https://gohugo.io/templates/data-templates/)._
 
 - Create a custom site layout.
