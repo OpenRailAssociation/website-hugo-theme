@@ -1,4 +1,8 @@
 # Hugo Story
+
+> [!NOTE]
+> This theme has been directly integrated into the website repository. Therefore, this repo is archived. See [this Pull Request](https://github.com/OpenRailAssociation/website/pull/6).
+
 ## A (modular, highly tweakable) responsive one-page theme for Hugo.
 
 > [!NOTE]
